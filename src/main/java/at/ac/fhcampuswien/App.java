@@ -22,7 +22,7 @@ public class App {
     }
 
     public static void oneMonthCalendar(int days, int firstDay){
-        int firstSpaces = firstDay * 2 + 2;
+        int firstSpaces = firstDay * 3 - 3;
 
         for (int i = 0; i < firstSpaces; i++) {
             System.out.print(" ");
@@ -33,6 +33,10 @@ public class App {
             if ((i + firstDay) % 7 == 0) {
                 System.out.println();
             }
+        }
+
+        if (firstDay == 2) {
+            System.out.println();
         }
     }
 
